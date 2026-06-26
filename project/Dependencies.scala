@@ -193,6 +193,7 @@ object Dependencies {
     libraryDependencies ++= Seq(
       "org.apache.pekko" %% "pekko-http" % PekkoHttpVersion,
       "org.apache.pekko" %% "pekko-http-spray-json" % PekkoHttpVersion,
+      "org.junit.jupiter" % "junit-jupiter-params" % JupiterKeys.junitJupiterVersion.value % Test,
       "org.slf4j" % "jcl-over-slf4j" % Slf4jVersion % Test) ++ JacksonDatabindDependencies)
 
   val File = Seq(
